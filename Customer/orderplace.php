@@ -1,0 +1,83 @@
+<?php
+include("header.php");
+?>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body onload="myFunction()">
+<?php
+include("config.php");
+?>
+<form action="orderaction.php" method="post" enctype="multipart/form-data" style=" padding-top: 8%;background-image:url(images/a9.jpg)">
+  <script>
+  function myFunction()
+	{
+	//document.getElementById("Divaddress").style.visibility = "hidden";
+	//alert("s");
+	}
+	</script>
+  <div class="container" style="margin-left:93px; margin-bottom:10%;padding-left:130px; box-shadow: 2px 2px 10px #000000; border-radius: 4px; top: 14px; padding-top: 3%;">
+    <h2 style="text-align: center;margin-top: 6%;font-family: fantasy;">ENTER ADDRESS</h2>
+    <br>
+   <!-- <div class="row">
+      <div class="col-md-3" style="text-align:right">
+        <label>If the order has the Same address</label>
+      </div>
+      <div class="col-md-6">
+        <input type="radio" value="1" name="txt_status" id="txt_status"  onClick="fn1()">
+        Yes
+        <input type="radio" value="2" name="txt_status" id="txt_status"  onClick="fn1()">
+        No</div>
+    </div>-->
+    <br>
+   <!-- <script>
+	function fn1()
+	{
+	var status=document.getElementById("txt_status").value;
+	alert(status);
+	if(status==1)
+	{
+	alert(status);
+	document.getElementById("Divaddress").style.visibility = "none";
+
+	}
+	}
+	</script>-->
+    <div id="Divaddress">
+      <div class="row">
+        <div class="col-md-3" style="text-align:right">
+          <label>Address</label>
+        </div>
+        <div class="col-md-6">
+          <textarea class="form-control" name="txt_address" style="width:500px;" placeholder="Enter Address" required></textarea>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-3" style="text-align:right">
+          <label>Contact</label>
+        </div>
+        <div class="col-md-6">
+          <input type="tel" class="form-control" name="txt_contact"  pattern="[0-9]{10}" style="width:500px;" autocomplete="off" placeholder="Contact No. " required>
+        </div>
+      </div>
+    
+    <br>
+    <div id="Divbutton">
+    <div class="row">
+      <input type="submit" name="submit" value="Book Now" class="btn btn-primary" style="margin-left:63%">
+    </div>
+    </div>
+    </div>
+    <br>
+  </div>
+</form>
+</body>
+</html>
+<?php
+include("footer.php");
+?>
