@@ -27,29 +27,27 @@ $profile=mysqli_fetch_array($details);
       window.scrollTo(0, 1);
     }
   </script>
-  <!--booststrap-->
+
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-  <!--//booststrap end-->
-  <!-- font-awesome icons -->
+
   <link href="css/font-awesome.min.css" rel="stylesheet">
-  <!-- //font-awesome icons -->
-  <!--stylesheets-->
+
   <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-  <!--//stylesheets-->
+
   <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,600,700" rel="stylesheet">
   <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,500" rel="stylesheet">
 </head>
 
 <body>
   
-    <!-- header -->
+
     <div class="headder-top d-md-flex" style="margin-top:-15px;background-color:#000000;">
       <div id="logo">
         <h1>
           <a href="index.php">SpiceHut</a>
         </h1>
       </div>
-      <!-- nav -->
+  
       <nav class="mx-md-auto">
 
         <label for="drop" class="toggle">Menu</label>
@@ -61,7 +59,7 @@ $profile=mysqli_fetch_array($details);
          
         
           <li class="dropdown">
-            <!-- First Tier Drop Down -->
+      
             <label for="drop-2" class="toggle toogle-2">Manage
               <span class="fa fa-angle-down" aria-hidden="true"></span>
             </label>
