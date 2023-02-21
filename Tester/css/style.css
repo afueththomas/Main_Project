@@ -8,7 +8,7 @@ body {
   margin: 0;
   background: #fff;
   letter-spacing: 1px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 html {
   scroll-behavior: smooth;
@@ -29,25 +29,25 @@ body a:focus,
 a:hover {
   text-decoration: none;
 }
-input[type="button"],
-input[type="submit"] {
+input[type='button'],
+input[type='submit'] {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
   -o-transition: 0.5s all;
   -ms-transition: 0.5s all;
   letter-spacing: 1px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 select,
-input[type="email"],
-input[type="text"],
-input[type="password"],
-input[type="button"],
-input[type="submit"],
+input[type='email'],
+input[type='text'],
+input[type='password'],
+input[type='button'],
+input[type='submit'],
 textarea,
 span {
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
   -moz-transition: 0.5s all;
@@ -63,14 +63,14 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: 1px;
 }
 p {
   margin: 0;
   padding: 0;
   letter-spacing: 0px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
 }
 ul {
   margin: 0;
@@ -124,7 +124,7 @@ h5.top-title {
 
 .toggle-2,
 .toggle,
-[id^="drop"] {
+[id^='drop'] {
   display: none;
 }
 
@@ -148,7 +148,7 @@ nav {
 * we need to add a clear after the container. */
 
 nav:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -283,7 +283,7 @@ nav ul ul ul li {
 /* Change ' +' in order to change the Dropdown symbol */
 
 li > a:only-child:after {
-  content: "";
+  content: '';
 }
 
 a.reqe-button {
@@ -380,7 +380,7 @@ a.reqe-button {
     -ms-transition: 0.5s all;
   }
   /* Display Dropdown when clicked on Parent Lable */
-  [id^="drop"]:checked + ul {
+  [id^='drop']:checked + ul {
     display: inline-block;
     background: #000000;
     padding: 8px 0;
@@ -538,7 +538,7 @@ background-color: #212121;
   box-shadow: 1px 1px 4px #c1c1c1;
 }
 .main-top {
-  background: url(../images/banner.jpg) no-repeat 0px 0px;
+  background: url(../img/banner.jpg) no-repeat 0px 0px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

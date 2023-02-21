@@ -100,7 +100,7 @@ while($row=mysqli_fetch_array($sql))
         <label>Image </label>
       </div>
       <div class="col-md-6">
-        <input type="file" class="form-control" name="txt_image" pattern="^[A-Za_z][A-Za-z -]+$" style="width:500px;" placeholder="Enter type " autocomplete="off">
+        <input type="file" class="form-control" name="txt_image" accept=".jpg, .jpeg, .png" style="width:500px;" placeholder="Enter type " autocomplete="off">
       </div>
     </div>
     <br>

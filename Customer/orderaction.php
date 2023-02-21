@@ -2,6 +2,8 @@
 session_start();
 include("config.php");
 $customer_id=$_SESSION["cus_id"]; 
+$fname=$_POST["txt_fname"];
+$lname=$_POST["txt_lname"];
 $address=$_POST["txt_address"];
 $contact=$_POST["txt_contact"];
 
@@ -30,12 +32,12 @@ while($row3=mysqli_fetch_array($sql3))
 	$sql=mysqli_query($con,"INSERT INTO tbl_bookingdetail(booking_id,product_id,quantity)VALUES('$maxbid','$product_id','$quantity')");   
 
 }
-$sql=mysqli_query($con,"INSERT INTO tbl_order(customer_id,booking_id,address,contact,pincode) VALUES('$customer_id','$maxbid','$address','$contact','686585')");
+$sql=mysqli_query($con,"INSERT INTO tbl_order(customer_id,fname,lname,booking_id,address,contact,pincode) VALUES('$customer_id','$fname','$lname','$maxbid','$address','$contact','686585')");
 
 $sql=mysqli_query($con,"delete from tbl_cartmaster");
 $sql=mysqli_query($con,"delete from tbl_cartdetail");
 
-echo "<script>alert('Your Products are Ordered!!Please wait for the approval.We will contact through email!!');window.location='../payments/payment.php';</script>";
+echo "<script>alert('Your Products are Ordered!!');window.location='../payments/payment.php';</script>";
 
 
 echo $customer_id;

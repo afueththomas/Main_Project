@@ -64,14 +64,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<div class="tab-for">				
 													<h5> Total Amount</h5>
 														<input type="text" name="txt_total" value="<?php echo $amount?>" readonly>
-													<h5>Advance</h5>
-                                                    <?php 
-													$advance=$amount*20/100;
-													   $_SESSION["advanced"]=$advance;
-													   $_SESSION["netamount"]=$amount;
-													$a= $_SESSION["netamount"];
-													?>													
-														<input type="text" name="txt_advance" value="<?php echo $advance ?>" readonly>
 												</div>			
 													
 											
@@ -102,7 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 													</div>
 													<div class="tab-form-right user-form-rt">
 														<h5>CVV NUMBER</h5>													
-														 <input type="tel" name="txtqty" id="txtqty" value="" maxlength="3" class="form-control" pattern="[0-9]{4}" required style="  " placeholder="XXXX"/>
+														 <input type="tel" name="txtqty" id="txtqty" value="" maxlength="3" class="form-control" pattern="[0-9]{3}" required style="  " placeholder="XXXX"/>
 													</div>
 													<div class="clear"></div>
 												</div>

@@ -43,5 +43,4 @@ $res =$con-> query($query);
   </body>
 </html>
 <?php
-// include("footer.php");
 ?>

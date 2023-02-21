@@ -7,7 +7,7 @@
 
 <body>
 <?php
-$con=mysqli_connect("localhost","root","","dbaquarium");
+$con=mysqli_connect("localhost","root","","db_spicehut");
 ?>
 </body>
 </html>

@@ -62,10 +62,30 @@ $profile=mysqli_fetch_array($details);
         
           <li class="dropdown">
             <!-- First Tier Drop Down -->
-            <label for="drop-2" class="toggle toogle-2">Manage
+            <label for="drop-2" class="toggle toogle-2">Tester Management
               <span class="fa fa-angle-down" aria-hidden="true"></span>
             </label>
-            <a href="#">Manage
+            <a href="#">Tester Management
+              <span class="fa fa-angle-down" aria-hidden="true"></span> 
+            </a>
+            <input type="checkbox" id="drop-2">
+            <ul>
+           <li>
+                <a href="testerreg.php" class="drop-text">Tester Registration</a>
+                <a href="testermanage.php" class="drop-text">Tester Management</a>
+</li>
+            
+            </ul>
+            </li>
+
+
+
+            <li class="dropdown">
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle toogle-2">Product Management
+              <span class="fa fa-angle-down" aria-hidden="true"></span>
+            </label>
+            <a href="#">Product Management
               <span class="fa fa-angle-down" aria-hidden="true"></span> 
             </a>
             <input type="checkbox" id="drop-2">
@@ -78,22 +98,22 @@ $profile=mysqli_fetch_array($details);
             
             </ul>
             </li>
+
+
             
              <li class="active">
             <a href="view_booking.php">View Booking</a>
           </li>
           <li class="dropdown">
             <!-- First Tier Drop Down -->
-            <label for="drop-2" class="toggle toogle-2">Reports
+            <label for="drop-2" class="toggle toogle-2">Report
               <span class="fa fa-angle-down" aria-hidden="true"></span>
             </label>
-           
-            <a href="#">Reports
+            <a href="#">Report
               <span class="fa fa-angle-down" aria-hidden="true"></span> 
             </a>
             <input type="checkbox" id="drop-2">
-            <ul style="    width: 280%;">
-           <li style="    width: 200%;">
+            <ul>
                
                  <a href="report_pie.php" class="drop-text"> Product in Each Category</a>
                 <a href="most_selled.php" class="drop-text">Top Category of Product Selled</a>
