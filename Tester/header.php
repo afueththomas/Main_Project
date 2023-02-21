@@ -63,48 +63,21 @@ $profile=mysqli_fetch_array($details);
             <label for="drop-2" class="toggle toogle-2">Manage
               <span class="fa fa-angle-down" aria-hidden="true"></span>
             </label>
-            <a href="#">Manage
+            <a href="#">Test Product
               <span class="fa fa-angle-down" aria-hidden="true"></span> 
             </a>
             <input type="checkbox" id="drop-2">
             <ul>
            <li>
-                <a href="view_category.php" class="drop-text">Category</a>
-                <a href="viewproduct.php" class="drop-text">Product</a>
-                <a href="view_type.php" class="drop-text"> Type</a>
+                <a href="getimage.php" class="drop-text">Test Spices</a>
+          
 </li>
             
             </ul>
             </li>
             
-             <li class="active">
-            <a href="view_booking.php">View Booking</a>
-          </li>
-          <li class="dropdown">
-            <!-- First Tier Drop Down -->
-            <label for="drop-2" class="toggle toogle-2">Reports
-              <span class="fa fa-angle-down" aria-hidden="true"></span>
-            </label>
-           
-            <a href="#">Reports
-              <span class="fa fa-angle-down" aria-hidden="true"></span> 
-            </a>
-            <input type="checkbox" id="drop-2">
-            <ul style="    width: 280%;">
-           <li style="    width: 200%;">
-               
-                 <a href="report_pie.php" class="drop-text"> Product in Each Category</a>
-                <a href="most_selled.php" class="drop-text">Top Category of Product Selled</a>
-</li>
-
-
-  </li>  
-            </ul>
-
-            </li>
-       
-
-            </li>
+          
+        
            <li class="active">
             <a href="../Guest/logout.php">Logout</a>
           </li>
