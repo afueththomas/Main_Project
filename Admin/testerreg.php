@@ -11,7 +11,7 @@ include("config.php");
 	</style>
 </head>
 <body>
-<form action="customerReg_action.php"  method="post" onsubmit="return validate()">
+<form action="testerreg_action.php"  method="post" onsubmit="return validate()">
 <div class="container" style="margin-left:250px;padding-bottom:150px;padding-top: 7%;">
    	<div class="row">
             <div class="col-md-11" style="box-shadow: 2px 2px 10px #000000; border-radius: 4px; top: 14px;">

@@ -2,7 +2,7 @@
 include("../Guest/auth_tester.php");
 include('config.php');
 $login_id=$_SESSION['tes_id'];
-$details=mysqli_query($con,"SELECT *FROM tbl_tester WHERE id='$login_id'");
+$details=mysqli_query($con,"SELECT *FROM tbl_tester WHERE tester_id='$login_id'");
 if($details)
 {
 $profile=mysqli_fetch_array($details);
@@ -77,6 +77,24 @@ $profile=mysqli_fetch_array($details);
             </li>
             
           
+            <li class="dropdown">
+      
+      <label for="drop-2" class="toggle toogle-2">Manage
+        <span class="fa fa-angle-down" aria-hidden="true"></span>
+      </label>
+      <a href="#">Manage Stock
+        <span class="fa fa-angle-down" aria-hidden="true"></span> 
+      </a>
+      <input type="checkbox" id="drop-2">
+      <ul>
+     <li>
+          <a href="getimage.php" class="drop-text">Test Spices</a>
+    
+</li>
+      
+      </ul>
+      </li>
+
         
            <li class="active">
             <a href="../Guest/logout.php">Logout</a>
@@ -86,7 +104,7 @@ $profile=mysqli_fetch_array($details);
           <li class="active">
            <a href="#"><?php 
            echo "Hi..👋";
-           echo $profile['username']; ?></a>
+           echo $profile['fname']; ?></a>
           </li>
 
       </div>

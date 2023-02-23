@@ -1,21 +1,28 @@
 <?php
 include("config.php");
-if(isset($_POST["submit"]))
+if(isset($_POST["btnSave"]))
 {
-$category=$_POST['txt_category'];
-$categorydescription=$_POST['txt_Description'];
-$sql=mysqli_query($con,"SELECT count(*) as count FROM tbl_category WHERE category='$category'");
-$display=mysqli_fetch_array($sql);
-  		if($display['count']>0)
-		{
-			
-		echo "<script>alert('Already exist');window.location='view_category.php'</script>";	
-		}
-		else 
-		{
-		$sql=mysqli_query($con,"INSERT INTO tbl_category(category,description)VALUES('$category','$categorydescription')");
-echo " INSERT INTO tbl_category(category,description)VALUES('$category','$categorydescription')";
-		echo "<script>alert('category Registered Successfully!!');window.location='view_category.php'</script>";
+	$fname=$_POST["fname"];
+	$lname=$_POST["lname"];
+	$phone=$_POST["phone"];
+	$email=$_POST["email"]; 
+	$password=mysqli_real_escape_string($con,md5($_POST["password"]));
+	
+	
+$save=mysqli_query($con,"INSERT INTO `tbl_tester`(`fname`, `lname`, `phone`, `email`, `password`) VALUES ('$fname','$lname','$phone','$email','$password')");
+
+
+
+if($save)
+{
+echo "<script> alert ('Tester Registration SuccessFull !!! '); window.location='index.php'</script>";
+
 }
+
+
 }
+
+
 ?>
+<a href=""
+
