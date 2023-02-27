@@ -40,7 +40,7 @@ include("config.php");
         <p> If Not Registered ? <a href="customerreg.php">Click Here</a></p>
         <br>
         
-        <p> Forgot Password ? <a href="forgot.php">Click Here</a></p>
+        <p> Forgot Password ? <a href="forgotpassword.php">Click Here</a></p>
         <br>
         <br>
       </div>

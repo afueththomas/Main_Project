@@ -12,7 +12,7 @@ $profile=mysqli_fetch_array($details);
 <html lang="zxx">
 
 <head>
-  <title>SpiceHut | Admin</title>
+  <title>SpiceHut | Tester</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Yield Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -82,13 +82,13 @@ $profile=mysqli_fetch_array($details);
       <label for="drop-2" class="toggle toogle-2">Manage
         <span class="fa fa-angle-down" aria-hidden="true"></span>
       </label>
-      <a href="#">Manage Stock
+      <a href="viewproduct.php">Manage Stock
         <span class="fa fa-angle-down" aria-hidden="true"></span> 
       </a>
       <input type="checkbox" id="drop-2">
       <ul>
      <li>
-          <a href="getimage.php" class="drop-text">Test Spices</a>
+          <a href="#" class="drop-text">#</a>
     
 </li>
       
@@ -102,7 +102,7 @@ $profile=mysqli_fetch_array($details);
 
           
           <li class="active">
-           <a href="#"><?php 
+           <a href="viewprofile.php"><?php 
            echo "Hi..👋";
            echo $profile['fname']; ?></a>
           </li>

@@ -8,14 +8,16 @@ include("config.php");
  <meta charset="utf-8">
  
  </head>
- 
+ <br>
+ <br>
+ <br>
  <body>
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 <form action="" method="post" enctype="multipart/form-data">
    <div class="col-md-9" style="box-shadow: 2px 2px 10px #000000; border-radius:0px; top: 14px; margin-left: 12%;">
    <div class="container" style="width:65%; margin-left:12% ;box-sizing:border-box; margin-bottom:2%; padding:30px 40px 30px 120px; margin-top: 0%;">
    <div class="row" style="margin-left: -173%;margin-top: 10%;margin-bottom: -5%;">
-    <input type="submit" name="addnew" value="AddNew" formaction="reg_product.php" class="btn btn-primary" style="margin-left:60%">
+   
   </div>
    <h2 style="text-align: center;margin-top: 7%;margin-left:10%;font-family: fantasy;">PRODUCT DETAILS</h2>
    <br>
@@ -58,7 +60,7 @@ $category=$_POST["category_name"];
 <script>
 document.getElementById("category_name").value="<?php echo $category ?>";
 </script>
-<div class="container" style="width:100%;  margin-left: 81px;" >
+<div class="container" style="width:100%;  margin-left: 350px;" >
    <div class="row">
     <h3 style="text-align: center;;margin-left: 210%;margin-top:10%;padding-bottom
 	:5%;margin-right:20%">PRODUCT DETAILS</h3>
@@ -68,12 +70,9 @@ document.getElementById("category_name").value="<?php echo $category ?>";
         <tr>
            <th scope="col">Sl No</th>
            <th>Product</th>
-           <th>Type </th>
            <th>Image</th>
            <th>Rate </th>
-           <th>Description</th>
-           <th style="color:#F00">Edit</th>
-           <th style="color:#F00">Delete</th>
+           <th style="color:#090">Stock Update</th>
          </tr>
       </thead>
        <?php
@@ -85,12 +84,9 @@ $sql=mysqli_query($con,"SELECT * FROM `tbl_product` p inner join tbl_category c 
 	echo  "<tr>";
 	echo "<td>" .$slno++."</td>";
 	echo "<td>".$display["product_name"]."</td>";
-	echo "<td>".$display["type"]."</td>";
 	echo "<td><img src='../images/".$display["image"]."'height='150'width='200'/></td>";
 	echo "<td>".$display["product_rate"]."</td>";
-	echo "<td>".$display["product_description"]."</td>";
-	echo "<td><a style='color:#090' href='editproduct.php?product_id=".$display['product_id']."'>Edit</a> </td>";
-	echo "<td><a style='color:#090' href='deleteproduct.php?product_id=".$display['product_id']."'>Delete</a> </td>";
+	echo "<td><a style='color:#090' href='update.php?product_id=".$display['product_id']."'>Update</a> </td>";
 								echo "</tr>";
 								
 							}
@@ -111,5 +107,5 @@ $sql=mysqli_query($con,"SELECT * FROM `tbl_product` p inner join tbl_category c 
 </body>
  </html>
 <?php
-// include("footer.php");
+//include("footer.php");
 ?>

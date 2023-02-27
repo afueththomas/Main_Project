@@ -33,8 +33,20 @@ include("config.php");
      while($row=mysqli_fetch_array($result))
 							{
 								?>
-      <div class="col-md-4" style="box-shadow: 3px 3px 10px #000; border-radius: 10px; top: 34px;width: 260px;height:439px;background-color: white;color: white;margin-left:7%;;margin-top:8%;margin-bottom:15%;margin-right:6px%;"> 
+      <div class="col-md-4" style="box-shadow: 3px 3px 10px #000; border-radius: 10px; top: 34px;width: 260px;height:470px;background-color: white;color: white;margin-left:7%;;margin-top:8%;margin-bottom:15%;margin-right:6px%;"> 
       <?php echo "<a style='color:#090' href='customerreg.php'>";?>
+
+      <?php
+      if ($row['stock']==NULL)
+      echo "NO STOCKS AVAILABLE";
+      else
+       {
+        echo "Only ";
+       echo $row['stock'];
+       echo " Stock Left!!!";
+       }
+       ?>
+
         <div style="text-align: center;margin-top:43px;"><b> </b></div>
         <div style="text-align: center"> <b> <img src="../images/<?php echo $row['image'] ?>" width="250px" height="200px" />
           <p style="color:black">Product Name:</p>
