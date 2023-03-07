@@ -8,7 +8,7 @@ if(isset($_POST['change_password']))
 	$newpass=md5($_POST['cpassword']);
 	$change=mysqli_query($con,"UPDATE tbl_customer SET password='$newpass' WHERE email='$recipient'");
 	if($change)
-	echo "<script> alert('Password changed successfully'); window.location.href='login.php';</script>";
+	echo "<script> alert('Password changed successfully'); window.location.href='customerlogin.php';</script>";
 	else
 	echo "<script> alert('Password Changer encountered an error'); window.location.href='forgot_password.php';</script>";
 }
@@ -65,6 +65,8 @@ function validate()
 	}
 }
 	</script>
+	<br>
+	<br>
 	<style>
 		.password-input{
 		margin-left:350px;
@@ -129,5 +131,5 @@ function validate()
 			</form>
 			</div>
 <?php
-include('footer.php');
+// include('footer.php');
 ?>

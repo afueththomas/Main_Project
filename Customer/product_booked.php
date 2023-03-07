@@ -9,7 +9,7 @@ include("header.php");
 </head>
 
 <body>
-<form action="orderplace.php" method="post" onload="f1()" style="background-image:url(images/a9.jpg)">
+<form action="../stripe/checkout.php" method="post" onload="f1()" style="background-image:url(images/a9.jpg)">
   <script>
 document.getElementById("txttotal").value="0";
 </script>

@@ -1,4 +1,5 @@
 <?php
+include('header.php');
 session_start();
 include('config.php');
 use PHPMailer\PHPMailer\PHPMailer;
@@ -31,11 +32,11 @@ if(isset($_POST['send_otp']))
                 $mail->isSMTP();                                            //Send using SMTP
                 $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
                 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                $mail->Username   = 'projectrecoverymail@gmail.com';                     //SMTP username
-                $mail->Password   = 'recoverymai';                               //SMTP password
+                $mail->Username   = 'afueththomas2023b@mca.ajce.in';                     //SMTP username
+                $mail->Password   = 'LIAJwith1215225';                               //SMTP password
                 $mail->SMTPSecure = 'ssl';            //Enable implicit TLS encryption
                 $mail->Port       = 465;   
-                $mail->setFrom('projectrecoverymail@gmail.com');
+                $mail->setFrom('afueththomas2023b@mca.ajce.in');
                 $mail->addAddress($recipient, 'Portal User');  
                 // $mail->FromName = "Labour Management Portal"; //To address and name 
                 // $mail->addAddress($recipient);//Recipient name is optional
@@ -77,9 +78,10 @@ if(isset($_POST['recieve_otp']))
         }
     }
 }
-include('header.php');
-?>
 
+?>
+<br>
+<br>
 <style>
         .email-input{
         margin-left:350px;
@@ -204,5 +206,5 @@ include('header.php');
         </form>
     </div>
 <?php 
-include('footer.php');
+// include('footer.php');
 ?>

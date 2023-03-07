@@ -37,7 +37,7 @@ $sql=mysqli_query($con,"INSERT INTO tbl_order(customer_id,fname,lname,booking_id
 $sql=mysqli_query($con,"delete from tbl_cartmaster");
 $sql=mysqli_query($con,"delete from tbl_cartdetail");
 
-echo "<script>alert('Your Products are Ordered!!');window.location='../payments/payment.php';</script>";
+echo "<script>alert('Your Products are Ordered!!');window.location='../Stripe/index.php';</script>";
 
 
 echo $customer_id;
